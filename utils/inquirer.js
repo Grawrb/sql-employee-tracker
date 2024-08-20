@@ -2,7 +2,10 @@
 const inquirer = require('inquirer');
 const queries = require('./queries.js');
 
-function menu() {
+
+module.exports = {
+
+    menu: function () {
     inquirer.prompt([
         {
             type: 'list',
@@ -48,5 +51,4 @@ function menu() {
         }
     });
 }
-
-module.exports = { menu };
+};

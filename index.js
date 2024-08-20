@@ -1,4 +1,6 @@
 const { menu } = require('./utils/inquirer.js');
+// import { menu } from './utils/inquirer.js';
+
 
 async function main() {
     try {
