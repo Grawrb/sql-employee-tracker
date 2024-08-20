@@ -22,13 +22,13 @@ function menu() {
     ]).then(answer => {
         switch (answer.choice) {
             case 'View all departments':
-                queries.viewDepartments();
+                queries.getDepartments();
                 break;
             case 'View all roles':
-                queries.viewRoles();
+                queries.getRoles();
                 break;
             case 'View all employees':
-                queries.viewEmployees();
+                queries.getEmployeesWithManagers();
                 break;
             case 'Add a department':
                 queries.addDepartment();
@@ -49,6 +49,4 @@ function menu() {
     });
 }
 
-module.exports = {
-    menu
-};
+module.exports = { menu };
